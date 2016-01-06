@@ -3,7 +3,6 @@ require('./app.less');
 
 var moment = require('moment');
 var React = require('react');
-var ReactDOM = require('react-dom');
 var InputMoment = require('../src/input-moment');
 var packageJson = require('../package.json');
 
@@ -48,4 +47,4 @@ var App = React.createClass({
   }
 });
 
-ReactDOM.render(<App/>, document.getElementById('app'));
+React.render(<App/>, document.getElementById('app'));
