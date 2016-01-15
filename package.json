@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node_modules/.bin/webpack-dev-server -c --port=8888",
-    "build-js": "node_modules/.bin/webpack -p",
+    "build-js": "make",
     "build-css": "node_modules/.bin/lessc --clean-css src/less/input-moment.less dist/input-moment.css",
     "build": "npm run build-js && npm run build-css",
     "deploy": "npm run build && github-pages-deploy",
